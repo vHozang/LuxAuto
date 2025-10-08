@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxAuto - Premium Car Dealership</title>
+    <meta name="description" content="Discover premium luxury vehicles at LuxAuto. Your trusted partner for luxury cars.">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <a class="logo" href="index.html" aria-label="LuxAuto Home">
+                    <h1>LuxAuto</h1>
+                </a>
+
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active"><span data-i18n="nav.home">Home</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="frontend/about.html" class="nav-link"><span data-i18n="nav.about">About Us</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="frontend/products.html" class="nav-link">
+                            <span data-i18n="nav.products">Products</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="frontend/products.html#luxury" data-i18n="nav.productsLuxury">Luxury Cars</a></li>
+                            <li><a href="frontend/products.html#electric" data-i18n="nav.productsElectric">Electric Vehicles</a></li>
+                            <li><a href="frontend/products.html#sports" data-i18n="nav.productsSports">Sports Cars</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="frontend/contact.html" class="nav-link"><span data-i18n="nav.contact">Contact</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="frontend/blog.html" class="nav-link"><span data-i18n="nav.blog">Blog</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="frontend/register.html" class="nav-link btn-register"><span data-i18n="nav.register">Register</span></a>
+                    </li>
+                </ul>
+
+                <div class="language-toggle" role="group" aria-label="Language selector">
+                    <button type="button" class="lang-btn active" data-lang="en">EN</button>
+                    <button type="button" class="lang-btn" data-lang="vi">VI</button>
+                </div>
+
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title" data-i18n="hero.title">Discover Premium Luxury</h1>
+                <p class="hero-subtitle" data-i18n="hero.subtitle">Experience the finest collection of luxury vehicles crafted for excellence</p>
+                <div class="hero-buttons">
+                    <a href="frontend/products.html" class="btn btn-primary" data-i18n="hero.primaryCta">Explore Collection</a>
+                    <a href="frontend/contact.html" class="btn btn-secondary" data-i18n="hero.secondaryCta">Schedule Test Drive</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://cdn.pixabay.com/photo/2017/04/06/22/11/car-2209439_1280.png" alt="Luxury Car Showroom" loading="lazy">
+            </div>
+        </section>
+
+        <!-- Featured Cars Section -->
+        <section class="featured-cars">
+            <div class="container">
+                <header class="section-header">
+                    <h2 data-i18n="featured.title">Featured Vehicles</h2>
+                    <p data-i18n="featured.description">Discover our handpicked selection of premium automobiles</p>
+                </header>
+
+                <div class="cars-grid" id="featured-cars-grid">
+                    <!-- Cars will be loaded dynamically via JavaScript -->
+                </div>
+
+                <div class="section-footer">
+                    <a href="frontend/products.html" class="btn btn-outline" data-i18n="featured.viewAll">View All Vehicles</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services">
+            <div class="container">
+                <header class="section-header">
+                    <h2 data-i18n="services.title">Our Services</h2>
+                    <p data-i18n="services.subtitle">Comprehensive automotive solutions for discerning customers</p>
+                </header>
+
+                <div class="services-grid">
+                    <article class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <h3 data-i18n="services.cards.sales.title">Sales</h3>
+                        <p data-i18n="services.cards.sales.text">Premium vehicles with complete documentation and warranty</p>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3 data-i18n="services.cards.maintenance.title">Service & Maintenance</h3>
+                        <p data-i18n="services.cards.maintenance.text">Expert care from certified technicians using genuine parts</p>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3 data-i18n="services.cards.financing.title">Financing</h3>
+                        <p data-i18n="services.cards.financing.text">Flexible financing options tailored to your needs</p>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3 data-i18n="services.cards.insurance.title">Insurance</h3>
+                        <p data-i18n="services.cards.insurance.text">Comprehensive coverage for your valuable investment</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Section -->
+        <section class="video-section">
+            <div class="container">
+                <header class="section-header">
+                    <h2 data-i18n="video.title">Experience Excellence</h2>
+                    <p data-i18n="video.subtitle">Watch our showroom tour and discover the LuxAuto difference</p>
+                </header>
+
+                <div class="video-container">
+                    <video controls autoplay muted loop poster="">
+                        <source src="https://cdn.pixabay.com/video/2019/06/01/24125-340670601_large.mp4" type="video/mp4">
+                        <p data-i18n="video.unsupported">Your browser does not support the video tag. Please upgrade to a modern browser.</p>
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <!-- Canvas Graphics Section -->
+        <section class="graphics-section">
+            <div class="container">
+                <header class="section-header">
+                    <h2 data-i18n="graphics.title">Interactive Graphics</h2>
+                    <p data-i18n="graphics.subtitle">Explore our interactive car visualization</p>
+                </header>
+
+                <div class="canvas-container">
+                    <canvas id="carCanvas" width="800" height="400"></canvas>
+                    <div class="canvas-controls">
+                        <button id="animateBtn" class="btn btn-primary" data-i18n="graphics.animate">Animate Car</button>
+                        <button id="resetBtn" class="btn btn-secondary" data-i18n="graphics.reset">Reset</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h2 data-i18n="newsletter.title">Stay Updated</h2>
+                    <p data-i18n="newsletter.subtitle">Get the latest news about new arrivals and exclusive offers</p>
+
+                    <form class="newsletter-form" id="newsletter-form">
+                        <div class="form-group">
+                            <input type="email" id="newsletter-email" placeholder="Enter your email" data-i18n-placeholder="newsletter.placeholder" required>
+                            <button type="submit" class="btn btn-primary" data-i18n="newsletter.button">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>LuxAuto</h3>
+                    <p data-i18n="footer.about">Your premier destination for luxury automobiles. Experience excellence in every detail.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4 data-i18n="footer.quickLinksTitle">Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html" data-i18n="footer.links.home">Home</a></li>
+                        <li><a href="frontend/about.html" data-i18n="footer.links.about">About Us</a></li>
+                        <li><a href="frontend/products.html" data-i18n="footer.links.products">Products</a></li>
+                        <li><a href="frontend/contact.html" data-i18n="footer.links.contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 data-i18n="footer.servicesTitle">Services</h4>
+                    <ul>
+                        <li><a href="#" data-i18n="footer.services.sales">Sales</a></li>
+                        <li><a href="#" data-i18n="footer.services.service">Service</a></li>
+                        <li><a href="#" data-i18n="footer.services.financing">Financing</a></li>
+                        <li><a href="#" data-i18n="footer.services.insurance">Insurance</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 data-i18n="footer.contactTitle">Contact Info</h4>
+                    <div class="contact-info">
+                        <p>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span data-i18n="footer.contact.address">123 Luxury Avenue, Auto City</span>
+                        </p>
+                        <p>
+                            <i class="fas fa-phone"></i>
+                            <span data-i18n="footer.contact.phone">+1 (555) 123-4567</span>
+                        </p>
+                        <p>
+                            <i class="fas fa-envelope"></i>
+                            <span data-i18n="footer.contact.email">info@luxauto.com</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p data-i18n="footer.bottom">&copy; 2025 LuxAuto. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Vehicle Details Modal -->
+    <div id="vehicleModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img id="modalImage" src="" alt="Vehicle Image">
+                </div>
+                <div class="modal-info">
+                    <h2 id="modalTitle"></h2>
+                    <p class="modal-price" id="modalPrice"></p>
+                    <div class="modal-specs" id="modalSpecs">
+                        <!-- Specifications will be populated dynamically -->
+                    </div>
+                    <div class="modal-description" id="modalDescription">
+                        <!-- Description will be populated dynamically -->
+                    </div>
+                    <div class="modal-actions">
+                        <button class="btn btn-primary" id="contactBtn" data-i18n="modal.contact">Contact Sales</button>
+                        <button class="btn btn-secondary" id="testDriveBtn" data-i18n="modal.testDrive">Schedule Test Drive</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Files -->
+    <script src="js/i18n.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/canvas-graphics.js"></script>
+</body>
+</html>

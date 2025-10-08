@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - LuxAuto</title>
+    <meta name="description" content="Stay updated with the latest automotive news, reviews, and insights from LuxAuto's blog.">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <a class="logo" href="../index.html" aria-label="LuxAuto Home">
+                    <h1>LuxAuto</h1>
+                </a>
+                
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link"><span data-i18n="nav.home">Home</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link"><span data-i18n="nav.about">About Us</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="products.html" class="nav-link">
+                            <span data-i18n="nav.products">Products</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="products.html#luxury" data-i18n="nav.productsLuxury">Luxury Cars</a></li>
+                            <li><a href="products.html#electric" data-i18n="nav.productsElectric">Electric Vehicles</a></li>
+                            <li><a href="products.html#sports" data-i18n="nav.productsSports">Sports Cars</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link"><span data-i18n="nav.contact">Contact</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="blog.html" class="nav-link active"><span data-i18n="nav.blog">Blog</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="register.html" class="nav-link btn-register"><span data-i18n="nav.register">Register</span></a>
+                    </li>
+                </ul>
+                
+                <div class="language-toggle" role="group" aria-label="Language selector">
+                    <button type="button" class="lang-btn active" data-lang="en">EN</button>
+                    <button type="button" class="lang-btn" data-lang="vi">VI</button>
+                </div>
+
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 data-i18n="blogPage.header.title">Automotive Insights</h1>
+                <p data-i18n="blogPage.header.subtitle">Latest news, reviews, and trends in luxury automotive</p>
+            </div>
+        </section>
+
+        <!-- Featured Article -->
+        <section class="featured-article">
+            <div class="container">
+                <div class="featured-header">
+                    <div class="section-intro">
+                        <span class="intro-badge" data-i18n="blogPage.featured.badge">Editor's Choice</span>
+                        <h2 data-i18n="blogPage.featured.title">Featured Story</h2>
+                        <p data-i18n="blogPage.featured.subtitle">Our most popular and insightful article this week</p>
+                    </div>
+                </div>
+                
+                <article class="featured-post">
+                    <div class="featured-layout">
+                        <div class="featured-image">
+                            <img src="https://cdn.pixabay.com/photo/2022/10/04/19/38/car-7498955_1280.jpg" alt="The Future of Electric Luxury Vehicles" loading="lazy">
+                            <div class="featured-overlay">
+                                <div class="featured-badge">
+                                    <i class="fas fa-star"></i>
+                                    <span data-i18n="blogPage.featured.badgeLabel">Featured</span>
+                                </div>
+                                <div class="post-category">
+                                    <span class="category-badge technology" data-i18n="blog.categories.technology">Technology</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="featured-content">
+                            <div class="post-meta">
+                                <div class="meta-item">
+                                    <i class="fas fa-calendar"></i>
+                                    <span data-i18n="blogPage.featured.date">December 15, 2024</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span data-i18n="blogPage.featured.readTime">5 min read</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-user"></i>
+                                    <span data-i18n="blogPage.featured.author">By Editorial Team</span>
+                                </div>
+                            </div>
+                            
+                            <h2 data-i18n="blogPage.featured.heading">The Future of Electric Luxury Vehicles: Revolutionary Changes Ahead</h2>
+                            
+                            <p class="featured-excerpt" data-i18n="blogPage.featured.excerpt">Discover how electric technology is revolutionizing the luxury automotive market, bringing together sustainability and premium performance in ways never before imagined. From advanced battery systems to autonomous driving capabilities, the future is electric.</p>
+                            
+                            <div class="featured-highlights">
+                                <div class="highlight">
+                                    <i class="fas fa-battery-full"></i>
+                                    <span data-i18n="blogPage.featured.highlights.battery">Next-gen battery technology</span>
+                                </div>
+                                <div class="highlight">
+                                    <i class="fas fa-robot"></i>
+                                    <span data-i18n="blogPage.featured.highlights.autonomy">Autonomous driving features</span>
+                                </div>
+                                <div class="highlight">
+                                    <i class="fas fa-leaf"></i>
+                                    <span data-i18n="blogPage.featured.highlights.emissions">Zero-emission luxury</span>
+                                </div>
+                            </div>
+                            
+                            <div class="featured-actions">
+                                <a href="#" class="btn btn-primary">
+                                    <span data-i18n="blogPage.featured.readCta">Read Full Article</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                                <div class="post-engagement">
+                                    <button class="engagement-btn">
+                                        <i class="fas fa-heart"></i>
+                                        <span>324</span>
+                                    </button>
+                                    <button class="engagement-btn">
+                                        <i class="fas fa-share"></i>
+                                        <span data-i18n="blogPage.featured.share">Share</span>
+                                    </button>
+                                    <button class="engagement-btn">
+                                        <i class="fas fa-bookmark"></i>
+                                        <span data-i18n="blogPage.featured.save">Save</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Brand Inspired Stories -->
+        <section class="brand-stories">
+            <div class="container">
+                <div class="section-intro">
+                    <span class="intro-badge" data-i18n="blogPage.brands.badge">Premium Brands</span>
+                    <h2 data-i18n="blogPage.brands.title">Stories from Luxury Automotive Leaders</h2>
+                    <p data-i18n="blogPage.brands.subtitle">Discover insights and innovations from the world's most prestigious automotive brands</p>
+                </div>
+                
+                <div class="brand-cards">
+                    <div class="brand-card bmw">
+                        <div class="brand-header">
+                            <div class="brand-logo">
+                                <span class="brand-initial">BMW</span>
+                            </div>
+                            <div class="brand-info">
+                                <h3 data-i18n="blogPage.brandCards.bmw.title">BMW Innovation</h3>
+                                <p data-i18n="blogPage.brandCards.bmw.tagline">The Ultimate Driving Machine</p>
+                            </div>
+                        </div>
+                        <div class="brand-content">
+                            <h4 data-i18n="blogPage.brandCards.bmw.articleTitle">BMW's Electric Future: The iX Revolution</h4>
+                            <p data-i18n="blogPage.brandCards.bmw.articleExcerpt">Exploring BMW's groundbreaking iX series and their commitment to sustainable luxury mobility.</p>
+                            <div class="brand-stats">
+                                <span><i class="fas fa-eye"></i> <span data-i18n="blogPage.brandCards.bmw.views">2.3k views</span></span>
+                                <span><i class="fas fa-clock"></i> <span data-i18n="blogPage.brandCards.bmw.readTime">5 min read</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="brand-card mercedes">
+                        <div class="brand-header">
+                            <div class="brand-logo">
+                                <span class="brand-initial">MB</span>
+                            </div>
+                            <div class="brand-info">
+                                <h3 data-i18n="blogPage.brandCards.mercedes.title">Mercedes-Benz</h3>
+                                <p data-i18n="blogPage.brandCards.mercedes.tagline">The Best or Nothing</p>
+                            </div>
+                        </div>
+                        <div class="brand-content">
+                            <h4 data-i18n="blogPage.brandCards.mercedes.articleTitle">Mercedes EQS: Redefining Electric Luxury</h4>
+                            <p data-i18n="blogPage.brandCards.mercedes.articleExcerpt">How Mercedes-Benz is setting new standards in electric vehicle luxury and performance.</p>
+                            <div class="brand-stats">
+                                <span><i class="fas fa-eye"></i> <span data-i18n="blogPage.brandCards.mercedes.views">1.9k views</span></span>
+                                <span><i class="fas fa-clock"></i> <span data-i18n="blogPage.brandCards.mercedes.readTime">6 min read</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="brand-card honda">
+                        <div class="brand-header">
+                            <div class="brand-logo">
+                                <span class="brand-initial">H</span>
+                            </div>
+                            <div class="brand-info">
+                                <h3 data-i18n="blogPage.brandCards.honda.title">Honda</h3>
+                                <p data-i18n="blogPage.brandCards.honda.tagline">The Power of Dreams</p>
+                            </div>
+                        </div>
+                        <div class="brand-content">
+                            <h4 data-i18n="blogPage.brandCards.honda.articleTitle">Honda's Reliability Legacy: Engineering Excellence</h4>
+                            <p data-i18n="blogPage.brandCards.honda.articleExcerpt">Discover what makes Honda vehicles synonymous with reliability and innovative engineering.</p>
+                            <div class="brand-stats">
+                                <span><i class="fas fa-eye"></i> <span data-i18n="blogPage.brandCards.honda.views">1.7k views</span></span>
+                                <span><i class="fas fa-clock"></i> <span data-i18n="blogPage.brandCards.honda.readTime">4 min read</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Latest Articles -->
+        <section class="latest-articles">
+            <div class="container">
+                <div class="articles-header">
+                    <div class="section-intro">
+                        <span class="intro-badge" data-i18n="blogPage.latest.badge">Latest News</span>
+                        <h2 data-i18n="blogPage.latest.title">Recent Automotive Insights</h2>
+                    </div>
+                    
+                    <div class="filter-tabs">
+                        <button class="filter-tab active" data-filter="all" data-i18n="blogPage.filters.all">All Articles</button>
+                        <button class="filter-tab" data-filter="reviews" data-i18n="blogPage.filters.reviews">Car Reviews</button>
+                        <button class="filter-tab" data-filter="technology" data-i18n="blogPage.filters.technology">Technology</button>
+                        <button class="filter-tab" data-filter="maintenance" data-i18n="blogPage.filters.maintenance">Maintenance</button>
+                        <button class="filter-tab" data-filter="industry" data-i18n="blogPage.filters.industry">Industry News</button>
+                    </div>
+                </div>
+                
+                <div class="articles-grid">
+                    <article class="article-card premium" data-category="technology">
+                        <div class="article-image">
+                            <img src="https://cdn.pixabay.com/photo/2020/04/27/16/42/studio-5100637_1280.jpg" alt="Autonomous Driving Technology" loading="lazy">
+                            <div class="article-badge" data-i18n="blogPage.articleCards.autonomous.badge">Featured</div>
+                            <div class="read-time" data-i18n="blogPage.articleCards.autonomous.readTime">8 min read</div>
+                        </div>
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="category technology" data-i18n="blogPage.articleCards.autonomous.category">Technology</span>
+                                <span class="date" data-i18n="blogPage.articleCards.autonomous.date">Dec 10, 2024</span>
+                            </div>
+                            <h3><a href="#" data-i18n="blogPage.articleCards.autonomous.title">The Future of Autonomous Driving in Luxury Vehicles</a></h3>
+                            <p data-i18n="blogPage.articleCards.autonomous.excerpt">Exploring how AI and machine learning are revolutionizing the driving experience in premium automobiles.</p>
+                            <div class="article-footer">
+                                <div class="author">
+                                    <img src="https://cdn.pixabay.com/photo/2023/03/15/03/46/jeep-7853620_1280.jpg" alt="Author" class="author-avatar">
+                                    <span>Dr. Sarah Chen</span>
+                                </div>
+                                <div class="engagement">
+                                    <span><i class="fas fa-heart"></i> 156</span>
+                                    <span><i class="fas fa-comment"></i> 23</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="article-card" data-category="reviews">
+                        <div class="article-image">
+                            <img src="https://cdn.pixabay.com/photo/2016/03/26/22/34/car-1281640_1280.jpg" alt="BMW X7 Review" loading="lazy">
+                            <div class="read-time" data-i18n="blogPage.articleCards.bmwX7.readTime">12 min read</div>
+                        </div>
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="category reviews" data-i18n="blogPage.articleCards.bmwX7.category">Car Review</span>
+                                <span class="date" data-i18n="blogPage.articleCards.bmwX7.date">Dec 8, 2024</span>
+                            </div>
+                            <h3><a href="#" data-i18n="blogPage.articleCards.bmwX7.title">2024 BMW X7: Luxury SUV Redefined</a></h3>
+                            <p data-i18n="blogPage.articleCards.bmwX7.excerpt">Our comprehensive review of BMW's flagship SUV, covering performance, luxury features, and value proposition.</p>
+                            <div class="article-footer">
+                                <div class="author">
+                                    <img src="https://cdn.pixabay.com/photo/2015/06/20/13/55/man-815795_1280.jpg" alt="Author" class="author-avatar">
+                                    <span>Michael Rodriguez</span>
+                                </div>
+                                <div class="engagement">
+                                    <span><i class="fas fa-heart"></i> 89</span>
+                                    <span><i class="fas fa-comment"></i> 15</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="article-card" data-category="maintenance">
+                        <div class="article-image">
+                            <img src="https://cdn.pixabay.com/photo/2024/02/02/18/41/ai-generated-8548846_1280.jpg" alt="Luxury Car Maintenance" loading="lazy">
+                            <div class="read-time" data-i18n="blogPage.articleCards.winterCare.readTime">6 min read</div>
+                        </div>
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="category maintenance" data-i18n="blogPage.articleCards.winterCare.category">Maintenance</span>
+                                <span class="date" data-i18n="blogPage.articleCards.winterCare.date">Dec 5, 2024</span>
+                            </div>
+                            <h3><a href="#" data-i18n="blogPage.articleCards.winterCare.title">Essential Winter Maintenance for Luxury Vehicles</a></h3>
+                            <p data-i18n="blogPage.articleCards.winterCare.excerpt">Keep your premium vehicle in perfect condition during harsh winter months with these expert tips.</p>
+                            <div class="article-footer">
+                                <div class="author">
+                                    <img src="https://cdn.pixabay.com/photo/2016/09/02/08/32/cars-1638594_1280.jpg" alt="Author" class="author-avatar">
+                                    <span>James Wilson</span>
+                                </div>
+                                <div class="engagement">
+                                    <span><i class="fas fa-heart"></i> 124</span>
+                                    <span><i class="fas fa-comment"></i> 31</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="article-card" data-category="industry">
+                        <div class="article-image">
+                            <img src="https://cdn.pixabay.com/photo/2023/01/18/00/30/car-7725834_960_720.jpg" alt="Electric Vehicle Market" loading="lazy">
+                            <div class="read-time" data-i18n="blogPage.articleCards.evsurge.readTime">10 min read</div>
+                        </div>
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="category industry" data-i18n="blogPage.articleCards.evsurge.category">Industry News</span>
+                                <span class="date" data-i18n="blogPage.articleCards.evsurge.date">Dec 3, 2024</span>
+                            </div>
+                            <h3><a href="#" data-i18n="blogPage.articleCards.evsurge.title">Electric Vehicle Market Surges in 2024</a></h3>
+                            <p data-i18n="blogPage.articleCards.evsurge.excerpt">Analysis of the growing EV market and what it means for luxury automotive manufacturers and consumers.</p>
+                            <div class="article-footer">
+                                <div class="author">
+                                    <img src="https://cdn.pixabay.com/photo/2016/11/23/17/24/woman-1853936_1280.jpg" alt="Author" class="author-avatar">
+                                    <span>Emma Thompson</span>
+                                </div>
+                                <div class="engagement">
+                                    <span><i class="fas fa-heart"></i> 203</span>
+                                    <span><i class="fas fa-comment"></i> 47</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="article-card" data-category="technology">
+                        <div class="article-image">
+                            <img src="https://cdn.pixabay.com/photo/2017/09/09/18/24/driving-2732934_1280.jpg" alt="Connected Car Technology" loading="lazy">
+                            <div class="read-time" data-i18n="blogPage.articleCards.connected.readTime">7 min read</div>
+                        </div>
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="category technology" data-i18n="blogPage.articleCards.connected.category">Technology</span>
+                                <span class="date" data-i18n="blogPage.articleCards.connected.date">Nov 30, 2024</span>
+                            </div>
+                            <h3><a href="#" data-i18n="blogPage.articleCards.connected.title">Connected Car Technology: The Road Ahead</a></h3>
+                            <p data-i18n="blogPage.articleCards.connected.excerpt">How IoT and 5G connectivity are transforming the in-vehicle experience and road safety.</p>
+                            <div class="article-footer">
+                                <div class="author">
+                                    <img src="https://cdn.pixabay.com/photo/2024/01/07/14/12/man-8493246_960_720.jpg" alt="Author" class="author-avatar">
+                                    <span>Alex Kumar</span>
+                                </div>
+                                <div class="engagement">
+                                    <span><i class="fas fa-heart"></i> 78</span>
+                                    <span><i class="fas fa-comment"></i> 12</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="article-card" data-category="reviews">
+                        <div class="article-image">
+                            <img src="https://cdn.pixabay.com/photo/2017/11/07/16/20/steering-wheel-2927406_1280.jpg" alt="Mercedes S-Class Review" loading="lazy">
+                            <div class="read-time" data-i18n="blogPage.articleCards.sclass.readTime">15 min read</div>
+                        </div>
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="category reviews" data-i18n="blogPage.articleCards.sclass.category">Car Review</span>
+                                <span class="date" data-i18n="blogPage.articleCards.sclass.date">Nov 28, 2024</span>
+                            </div>
+                            <h3><a href="#" data-i18n="blogPage.articleCards.sclass.title">Mercedes S-Class: The Pinnacle of Luxury</a></h3>
+                            <p data-i18n="blogPage.articleCards.sclass.excerpt">An in-depth review of the latest Mercedes S-Class, exploring its advanced features and luxurious appointments.</p>
+                            <div class="article-footer">
+                                <div class="author">
+                                    <img src="https://cdn.pixabay.com/photo/2022/05/30/20/43/car-7232127_1280.jpg" alt="Author" class="author-avatar">
+                                    <span>David Park</span>
+                                </div>
+                                <div class="engagement">
+                                    <span><i class="fas fa-heart"></i> 167</span>
+                                    <span><i class="fas fa-comment"></i> 28</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                
+                <div class="load-more-section">
+                    <button id="loadMoreBtn" class="btn btn-primary">
+                        <span data-i18n="buttons.loadMoreArticles">Load More Articles</span>
+                        <i class="fas fa-arrow-down"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Signup -->
+        <section class="blog-newsletter">
+            <div class="container">
+                <div class="newsletter-content">
+                    <div class="newsletter-text">
+                        <h2 data-i18n="blogPage.newsletter.title">Stay Informed</h2>
+                        <p data-i18n="blogPage.newsletter.subtitle">Subscribe to our blog newsletter and never miss the latest automotive insights and industry updates.</p>
+                    </div>
+                    
+                    <form class="newsletter-form" id="blog-newsletter-form">
+                        <div class="form-group">
+                            <input type="email" placeholder="Enter your email address" data-i18n-placeholder="blogPage.newsletter.placeholder" required>
+                            <button type="submit" class="btn btn-primary" data-i18n="blogPage.newsletter.button">Subscribe</button>
+                        </div>
+                    </form>
+                    
+                    <div class="newsletter-benefits">
+                        <div class="benefit">
+                            <i class="fas fa-check"></i>
+                            <span data-i18n="blogPage.newsletter.benefits.weekly">Weekly automotive insights</span>
+                        </div>
+                        <div class="benefit">
+                            <i class="fas fa-check"></i>
+                            <span data-i18n="blogPage.newsletter.benefits.reports">Exclusive industry reports</span>
+                        </div>
+                        <div class="benefit">
+                            <i class="fas fa-check"></i>
+                            <span data-i18n="blogPage.newsletter.benefits.nospam">No spam, unsubscribe anytime</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Popular Tags -->
+        <section class="popular-tags">
+            <div class="container">
+                <h2 data-i18n="blogPage.tags.title">Popular Tags</h2>
+                <div class="tags-cloud">
+                    <span class="tag" data-tag="luxury-cars" data-i18n="blogPage.tags.luxury">Luxury Cars</span>
+                    <span class="tag" data-tag="electric-vehicles" data-i18n="blogPage.tags.electric">Electric Vehicles</span>
+                    <span class="tag" data-tag="bmw">BMW</span>
+                    <span class="tag" data-tag="mercedes">Mercedes</span>
+                    <span class="tag" data-tag="honda">Honda</span>
+                    <span class="tag" data-tag="car-maintenance" data-i18n="blogPage.tags.maintenance">Car Maintenance</span>
+                    <span class="tag" data-tag="automotive-technology" data-i18n="blogPage.tags.technology">Automotive Technology</span>
+                    <span class="tag" data-tag="car-buying-guide" data-i18n="blogPage.tags.buyingGuide">Car Buying Guide</span>
+                    <span class="tag" data-tag="financing" data-i18n="blogPage.tags.financing">Financing</span>
+                    <span class="tag" data-tag="car-reviews" data-i18n="blogPage.tags.reviews">Car Reviews</span>
+                    <span class="tag" data-tag="safety" data-i18n="blogPage.tags.safety">Safety</span>
+                    <span class="tag" data-tag="performance" data-i18n="blogPage.tags.performance">Performance</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sidebar Content -->
+        <aside class="blog-sidebar">
+            <div class="container">
+                <div class="sidebar-content">
+                    <!-- Recent Posts -->
+                    <div class="sidebar-widget">
+                        <h3 data-i18n="blogPage.sidebar.recent">Recent Posts</h3>
+                        <div class="recent-posts" id="recent-posts">
+                            <!-- Recent posts will be loaded dynamically -->
+                        </div>
+                    </div>
+                    
+                    <!-- Archives -->
+                    <div class="sidebar-widget">
+                        <h3 data-i18n="blogPage.sidebar.archives">Archives</h3>
+                        <ul class="archives-list">
+                            <li><a href="#" data-i18n="blogPage.archives.december">December 2024 (8)</a></li>
+                            <li><a href="#" data-i18n="blogPage.archives.november">November 2024 (12)</a></li>
+                            <li><a href="#" data-i18n="blogPage.archives.october">October 2024 (15)</a></li>
+                            <li><a href="#" data-i18n="blogPage.archives.september">September 2024 (10)</a></li>
+                            <li><a href="#" data-i18n="blogPage.archives.august">August 2024 (14)</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Social Media -->
+                    <div class="sidebar-widget">
+                        <h3 data-i18n="blogPage.sidebar.follow">Follow Us</h3>
+                        <div class="social-links">
+                            <a href="#" class="social-link facebook">
+                                <i class="fab fa-facebook"></i>
+                                <span data-i18n="blogPage.social.facebook">Facebook</span>
+                            </a>
+                            <a href="#" class="social-link twitter">
+                                <i class="fab fa-twitter"></i>
+                                <span data-i18n="blogPage.social.twitter">Twitter</span>
+                            </a>
+                            <a href="#" class="social-link instagram">
+                                <i class="fab fa-instagram"></i>
+                                <span data-i18n="blogPage.social.instagram">Instagram</span>
+                            </a>
+                            <a href="#" class="social-link youtube">
+                                <i class="fab fa-youtube"></i>
+                                <span data-i18n="blogPage.social.youtube">YouTube</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>LuxAuto</h3>
+                    <p data-i18n="footer.about">Your premier destination for luxury automobiles. Experience excellence in every detail.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-i18n="footer.quickLinksTitle">Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html" data-i18n="footer.links.home">Home</a></li>
+                        <li><a href="about.html" data-i18n="footer.links.about">About Us</a></li>
+                        <li><a href="products.html" data-i18n="footer.links.products">Products</a></li>
+                        <li><a href="contact.html" data-i18n="footer.links.contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-i18n="footer.servicesTitle">Services</h4>
+                    <ul>
+                        <li><a href="#" data-i18n="footer.services.sales">Sales</a></li>
+                        <li><a href="#" data-i18n="footer.services.service">Service</a></li>
+                        <li><a href="#" data-i18n="footer.services.financing">Financing</a></li>
+                        <li><a href="#" data-i18n="footer.services.insurance">Insurance</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-i18n="footer.contactTitle">Contact Info</h4>
+                    <div class="contact-info">
+                        <p>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span data-i18n="footer.contact.address">123 Luxury Avenue, Auto City</span>
+                        </p>
+                        <p>
+                            <i class="fas fa-phone"></i>
+                            <span data-i18n="footer.contact.phone">+1 (555) 123-4567</span>
+                        </p>
+                        <p>
+                            <i class="fas fa-envelope"></i>
+                            <span data-i18n="footer.contact.email">info@luxauto.com</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p data-i18n="footer.bottom">&copy; 2025 LuxAuto. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="../js/i18n.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/blog.js"></script>
+</body>
+</html>

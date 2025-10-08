@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - LuxAuto</title>
+    <meta name="description" content="Get in touch with LuxAuto for all your luxury automotive needs. Visit our showroom or contact us today.">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <a class="logo" href="../index.html" aria-label="LuxAuto Home">
+                    <h1>LuxAuto</h1>
+                </a>
+                
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link"><span data-i18n="nav.home">Home</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link"><span data-i18n="nav.about">About Us</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="products.html" class="nav-link">
+                            <span data-i18n="nav.products">Products</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="products.html#luxury" data-i18n="nav.productsLuxury">Luxury Cars</a></li>
+                            <li><a href="products.html#electric" data-i18n="nav.productsElectric">Electric Vehicles</a></li>
+                            <li><a href="products.html#sports" data-i18n="nav.productsSports">Sports Cars</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link active"><span data-i18n="nav.contact">Contact</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="blog.html" class="nav-link"><span data-i18n="nav.blog">Blog</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="register.html" class="nav-link btn-register"><span data-i18n="nav.register">Register</span></a>
+                    </li>
+                </ul>
+                
+                <div class="language-toggle" role="group" aria-label="Language selector">
+                    <button type="button" class="lang-btn active" data-lang="en">EN</button>
+                    <button type="button" class="lang-btn" data-lang="vi">VI</button>
+                </div>
+
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 data-i18n="contact.header.title">Contact Us</h1>
+                <p data-i18n="contact.header.subtitle">Get in touch with our luxury automotive experts</p>
+            </div>
+        </section>
+
+        <!-- Contact Info Section -->
+        <section class="contact-info-section">
+            <div class="container">
+                <div class="contact-layout">
+                    <div class="contact-details">
+                        <div class="section-intro">
+                            <span class="intro-badge" data-i18n="contact.showroom.badge">Contact Us</span>
+                            <h2 data-i18n="contact.showroom.title">Visit Our Luxury Showroom</h2>
+                            <p data-i18n="contact.showroom.description">Experience our premium vehicles and exceptional service in person, or reach out to us through any of the channels below.</p>
+                        </div>
+                        
+                        <div class="contact-cards">
+                            <div class="contact-card primary">
+                                <div class="card-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="card-content">
+                                    <h3 data-i18n="contact.cards.location.title">Visit Our Showroom</h3>
+                                    <p class="address" data-i18n-html="contact.cards.location.address">123 Luxury Avenue<br>Auto City, AC 12345<br>United States</p>
+                                    <button id="getDirectionsBtn" class="btn-link">
+                                        <i class="fas fa-directions"></i>
+                                        <span data-i18n="contact.cards.location.cta">Get Directions</span>
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-card">
+                                <div class="card-icon">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div class="card-content">
+                                    <h3 data-i18n="contact.cards.phone.title">Call Us</h3>
+                                    <div class="contact-links">
+                                        <p data-i18n-html="contact.cards.phone.sales"><strong>Sales:</strong> <a href="tel:+15551234567">(555) 123-4567</a></p>
+                                        <p data-i18n-html="contact.cards.phone.service"><strong>Service:</strong> <a href="tel:+15551234568">(555) 123-4568</a></p>
+                                        <p data-i18n-html="contact.cards.phone.parts"><strong>Parts:</strong> <a href="tel:+15551234569">(555) 123-4569</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-card">
+                                <div class="card-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="card-content">
+                                    <h3 data-i18n="contact.cards.email.title">Email Us</h3>
+                                    <div class="contact-links">
+                                        <p><a href="mailto:info@luxauto.com" data-i18n="contact.cards.email.general">info@luxauto.com</a></p>
+                                        <p><a href="mailto:sales@luxauto.com" data-i18n="contact.cards.email.sales">sales@luxauto.com</a></p>
+                                        <p><a href="mailto:service@luxauto.com" data-i18n="contact.cards.email.service">service@luxauto.com</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-card">
+                                <div class="card-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="card-content">
+                                    <h3 data-i18n="contact.cards.hours.title">Business Hours</h3>
+                                    <div class="hours-schedule">
+                                        <p data-i18n="contact.cards.hours.weekday"><strong>Monday - Friday:</strong><br>9:00 AM - 8:00 PM</p>
+                                        <p data-i18n="contact.cards.hours.saturday"><strong>Saturday:</strong><br>9:00 AM - 6:00 PM</p>
+                                        <p data-i18n="contact.cards.hours.sunday"><strong>Sunday:</strong><br>12:00 PM - 5:00 PM</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Map Section -->
+                    <div class="map-section">
+                        <div class="map-header">
+                            <h3 data-i18n="contact.map.title">Find Us on the Map</h3>
+                            <p data-i18n="contact.map.subtitle">Locate our showroom and get directions from your current location</p>
+                        </div>
+                        
+                        <div class="map-container">
+                            <div id="googleMap" class="google-map">
+                                <!-- Embedded Google Maps -->
+                                <iframe 
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.325084899145!2d106.6981719!3d10.7823376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f4b3328eb23%3A0x10c92dbdc3eb8d8a!2sDistrict%201%2C%20Ho%20Chi%20Minh%20City%2C%20Vietnam!5e0!3m2!1sen!2sve!4v1639515516495!5m2!1sen!2sve"
+                                    width="100%" 
+                                    height="400" 
+                                    style="border:0;border-radius:12px;" 
+                                    allowfullscreen="" 
+                                    loading="lazy" 
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                            
+                            <div class="map-actions">
+                                <button id="getLocationBtn" class="btn btn-outline">
+                                    <i class="fas fa-location-arrow"></i>
+                                    <span data-i18n="contact.map.useLocation">Use My Location</span>
+                                </button>
+                                <button id="fullscreenMapBtn" class="btn btn-outline">
+                                    <i class="fas fa-expand"></i>
+                                    <span data-i18n="contact.map.viewLarge">View Larger Map</span>
+                                </button>
+                            </div>
+                            
+                            <div id="locationResult" class="location-result" style="display: none;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="contact-form-section">
+            <div class="container">
+                <div class="form-layout">
+                    <div class="form-intro">
+                        <div class="section-intro">
+                            <span class="intro-badge" data-i18n="contact.form.badge">Get In Touch</span>
+                            <h2 data-i18n="contact.form.title">Send Us a Message</h2>
+                            <p data-i18n="contact.form.subtitle">Our luxury automotive experts are ready to assist you. Get personalized service and expert advice for all your automotive needs.</p>
+                        </div>
+                        
+                        <div class="form-benefits">
+                            <div class="benefit-item">
+                                <i class="fas fa-clock"></i>
+                                <div class="benefit-content">
+                                    <h4 data-i18n="contact.form.benefits.response.title">Quick Response</h4>
+                                    <p data-i18n="contact.form.benefits.response.text">We respond to all inquiries within 24 hours</p>
+                                </div>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-user-tie"></i>
+                                <div class="benefit-content">
+                                    <h4 data-i18n="contact.form.benefits.consultation.title">Expert Consultation</h4>
+                                    <p data-i18n="contact.form.benefits.consultation.text">Get advice from certified automotive professionals</p>
+                                </div>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-shield-alt"></i>
+                                <div class="benefit-content">
+                                    <h4 data-i18n="contact.form.benefits.security.title">Secure & Private</h4>
+                                    <p data-i18n="contact.form.benefits.security.text">Your information is protected and confidential</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-container">
+                        <form id="contactForm" class="contact-form" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName" data-i18n="contact.form.labels.firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                                <span class="error-message" id="firstNameError"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="lastName" data-i18n="contact.form.labels.lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                                <span class="error-message" id="lastNameError"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email" data-i18n="contact.form.labels.email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                                <span class="error-message" id="emailError"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone" data-i18n="contact.form.labels.phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" data-i18n-placeholder="contact.form.placeholders.phone">
+                                <span class="error-message" id="phoneError"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject" data-i18n="contact.form.labels.subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="" data-i18n="contact.form.subject.placeholder">Select a subject</option>
+                                <option value="general" data-i18n="contact.form.subject.options.general">General Inquiry</option>
+                                <option value="sales" data-i18n="contact.form.subject.options.sales">Sales Information</option>
+                                <option value="service" data-i18n="contact.form.subject.options.service">Service Appointment</option>
+                                <option value="financing" data-i18n="contact.form.subject.options.financing">Financing Options</option>
+                                <option value="test-drive" data-i18n="contact.form.subject.options.testDrive">Schedule Test Drive</option>
+                                <option value="parts" data-i18n="contact.form.subject.options.parts">Parts Department</option>
+                                <option value="other" data-i18n="contact.form.subject.options.other">Other</option>
+                            </select>
+                            <span class="error-message" id="subjectError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="vehicleInterest" data-i18n="contact.form.labels.vehicleInterest">Vehicle of Interest</label>
+                            <input type="text" id="vehicleInterest" name="vehicleInterest" placeholder="e.g., BMW X5, Mercedes S-Class" data-i18n-placeholder="contact.form.placeholders.vehicleInterest">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" data-i18n="contact.form.labels.message">Message *</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Please provide details about your inquiry..." data-i18n-placeholder="contact.form.placeholders.message"></textarea>
+                            <span class="error-message" id="messageError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contactPreference" data-i18n="contact.form.labels.contactPreference">Preferred Contact Method</label>
+                            <div class="radio-group">
+                                <input type="radio" id="contactEmail" name="contactPreference" value="email" checked>
+                                <label for="contactEmail" data-i18n="contact.form.contactPreference.email">Email</label>
+                                
+                                <input type="radio" id="contactPhone" name="contactPreference" value="phone">
+                                <label for="contactPhone" data-i18n="contact.form.contactPreference.phone">Phone</label>
+                                
+                                <input type="radio" id="contactBoth" name="contactPreference" value="both">
+                                <label for="contactBoth" data-i18n="contact.form.contactPreference.either">Either</label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <label for="newsletter" data-i18n="contact.form.consent.newsletter">Subscribe to our newsletter for updates and special offers</label>
+                            </div>
+                        </div>
+                        
+                                <div class="form-group">
+                                    <div class="checkbox-group">
+                                        <input type="checkbox" id="privacy" name="privacy" required>
+                                        <label for="privacy" data-i18n-html="contact.form.consent.privacy">I agree to the <a href="#" target="_blank">Privacy Policy</a> and <a href="#" target="_blank">Terms of Service</a> *</label>
+                                        <span class="error-message" id="privacyError"></span>
+                                    </div>
+                                </div>
+                        
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary" id="submitBtn">
+                                <span class="btn-text" data-i18n="contact.form.submit">Send Message</span>
+                                <span class="btn-loading" style="display: none;">
+                                    <i class="fas fa-spinner fa-spin"></i> <span data-i18n="contact.form.sending">Sending...</span>
+                                </span>
+                            </button>
+                            <button type="reset" class="btn btn-secondary" data-i18n="contact.form.reset">Reset Form</button>
+                        </div>
+                    </form>
+                    
+                    <!-- Success Message -->
+                    <div id="successMessage" class="success-message" style="display: none;">
+                        <i class="fas fa-check-circle"></i>
+                        <h3 data-i18n="contact.form.success.title">Message Sent Successfully!</h3>
+                        <p data-i18n="contact.form.success.message">Thank you for contacting us. We'll get back to you within 24 hours.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="map-section">
+            <div class="container">
+                <header class="section-header">
+                    <h2 data-i18n="contact.mapSecondary.title">Find Us</h2>
+                    <p data-i18n="contact.mapSecondary.subtitle">Located in the heart of Auto City's luxury district</p>
+                </header>
+                
+                <!-- Embedded Map -->
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.1234567890123!2d-74.0059413!3d40.7128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a316e8a6f5d%3A0x123456789abcdef!2sLuxAuto%20Showroom!5e0!3m2!1sen!2sus!4v1234567890123"
+                        width="100%" 
+                        height="400" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                
+                <!-- Map Features -->
+                <div class="map-features">
+                    <div class="feature-item">
+                        <i class="fas fa-parking"></i>
+                        <span data-i18n="contact.mapSecondary.features.parking">Free Valet Parking</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-wheelchair"></i>
+                        <span data-i18n="contact.mapSecondary.features.accessible">Wheelchair Accessible</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-wifi"></i>
+                        <span data-i18n="contact.mapSecondary.features.wifi">Complimentary WiFi</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-coffee"></i>
+                        <span data-i18n="contact.mapSecondary.features.lounge">Customer Lounge</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <header class="section-header">
+                    <h2 data-i18n="contact.faq.title">Frequently Asked Questions</h2>
+                    <p data-i18n="contact.faq.subtitle">Quick answers to common questions</p>
+                </header>
+                
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-question" data-faq="1">
+                            <h3 data-i18n="contact.faq.items.financing.question">What are your financing options?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer" id="faq-1">
+                            <p data-i18n="contact.faq.items.financing.answer">We offer competitive financing rates starting from 2.9% APR with terms from 24 to 84 months. We work with multiple lenders to find the best option for your situation.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question" data-faq="2">
+                            <h3 data-i18n="contact.faq.items.tradein.question">Do you accept trade-ins?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer" id="faq-2">
+                            <p data-i18n="contact.faq.items.tradein.answer">Yes, we accept trade-ins and offer competitive valuations. Our experienced appraisers will provide you with a fair market value for your current vehicle.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question" data-faq="3">
+                            <h3 data-i18n="contact.faq.items.warranty.question">What warranty do you offer?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer" id="faq-3">
+                            <p data-i18n="contact.faq.items.warranty.answer">All our vehicles come with manufacturer warranties, and we offer extended warranty options for additional peace of mind. Certified pre-owned vehicles include additional coverage.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question" data-faq="4">
+                            <h3 data-i18n="contact.faq.items.testDrive.question">Can I schedule a test drive?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer" id="faq-4">
+                            <p data-i18n="contact.faq.items.testDrive.answer">Absolutely! You can schedule a test drive by calling us, filling out our contact form, or visiting our showroom. We recommend scheduling in advance for the best selection.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>LuxAuto</h3>
+                    <p data-i18n="footer.about">Your premier destination for luxury automobiles. Experience excellence in every detail.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-i18n="footer.quickLinksTitle">Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html" data-i18n="footer.links.home">Home</a></li>
+                        <li><a href="about.html" data-i18n="footer.links.about">About Us</a></li>
+                        <li><a href="products.html" data-i18n="footer.links.products">Products</a></li>
+                        <li><a href="contact.html" data-i18n="footer.links.contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-i18n="footer.servicesTitle">Services</h4>
+                    <ul>
+                        <li><a href="#" data-i18n="footer.services.sales">Sales</a></li>
+                        <li><a href="#" data-i18n="footer.services.service">Service</a></li>
+                        <li><a href="#" data-i18n="footer.services.financing">Financing</a></li>
+                        <li><a href="#" data-i18n="footer.services.insurance">Insurance</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-i18n="footer.contactTitle">Contact Info</h4>
+                    <div class="contact-info">
+                        <p>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span data-i18n="footer.contact.address">123 Luxury Avenue, Auto City</span>
+                        </p>
+                        <p>
+                            <i class="fas fa-phone"></i>
+                            <span data-i18n="footer.contact.phone">+1 (555) 123-4567</span>
+                        </p>
+                        <p>
+                            <i class="fas fa-envelope"></i>
+                            <span data-i18n="footer.contact.email">info@luxauto.com</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p data-i18n="footer.bottom">&copy; 2025 LuxAuto. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="../js/i18n.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/contact.js"></script>
+</body>
+</html>

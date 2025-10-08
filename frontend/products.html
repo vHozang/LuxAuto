@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - LuxAuto</title>
+    <meta name="description" content="Explore our extensive collection of luxury vehicles, electric cars, and sports cars at LuxAuto.">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <a class="logo" href="../index.html" aria-label="LuxAuto Home">
+                    <h1>LuxAuto</h1>
+                </a>
+                
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link"><span data-i18n="nav.home">Home</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link"><span data-i18n="nav.about">About Us</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="products.html" class="nav-link active">
+                            <span data-i18n="nav.products">Products</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#luxury" data-i18n="nav.productsLuxury">Luxury Cars</a></li>
+                            <li><a href="#electric" data-i18n="nav.productsElectric">Electric Vehicles</a></li>
+                            <li><a href="#sports" data-i18n="nav.productsSports">Sports Cars</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link"><span data-i18n="nav.contact">Contact</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="blog.html" class="nav-link"><span data-i18n="nav.blog">Blog</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="register.html" class="nav-link btn-register"><span data-i18n="nav.register">Register</span></a>
+                    </li>
+                </ul>
+                
+                <div class="language-toggle" role="group" aria-label="Language selector">
+                    <button type="button" class="lang-btn active" data-lang="en">EN</button>
+                    <button type="button" class="lang-btn" data-lang="vi">VI</button>
+                </div>
+
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 data-i18n="productsPage.header.title">Our Vehicle Collection</h1>
+                <p data-i18n="productsPage.header.subtitle">Discover premium automobiles crafted for discerning drivers</p>
+            </div>
+        </section>
+
+        <!-- Filter Section -->
+        <section class="filter-section">
+            <div class="container">
+                <div class="filter-controls">
+                    <h3 data-i18n="productsPage.filters.title">Filter Vehicles</h3>
+                    <div class="filter-options">
+                        <select id="categoryFilter" class="filter-select">
+                            <option value="all" data-i18n="productsPage.filters.categories.all">All Categories</option>
+                            <option value="luxury" data-i18n="productsPage.filters.categories.luxury">Luxury Cars</option>
+                            <option value="electric" data-i18n="productsPage.filters.categories.electric">Electric Vehicles</option>
+                            <option value="sports" data-i18n="productsPage.filters.categories.sports">Sports Cars</option>
+                        </select>
+                        
+                        <select id="priceFilter" class="filter-select">
+                            <option value="all" data-i18n="productsPage.filters.prices.all">All Prices</option>
+                            <option value="under-50k" data-i18n="productsPage.filters.prices.under50">Under $50,000</option>
+                            <option value="50k-100k" data-i18n="productsPage.filters.prices.mid">$50,000 - $100,000</option>
+                            <option value="over-100k" data-i18n="productsPage.filters.prices.over100">Over $100,000</option>
+                        </select>
+                        
+                        <input type="text" id="searchInput" placeholder="Search vehicles..." data-i18n-placeholder="productsPage.filters.search" class="search-input">
+                        <button id="clearFilters" class="btn btn-secondary" data-i18n="productsPage.filters.clear">Clear Filters</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Luxury Cars Section -->
+        <section id="luxury" class="vehicle-category">
+            <div class="container">
+                <header class="section-header">
+                    <h2 data-i18n="productsPage.categories.luxury.title">Luxury Cars</h2>
+                    <p data-i18n="productsPage.categories.luxury.subtitle">Experience ultimate comfort and sophistication</p>
+                </header>
+                
+                <div class="vehicles-grid" id="luxury-vehicles">
+                    <!-- Vehicles will be loaded dynamically -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Electric Vehicles Section -->
+        <section id="electric" class="vehicle-category">
+            <div class="container">
+                <header class="section-header">
+                    <h2 data-i18n="productsPage.categories.electric.title">Electric Vehicles</h2>
+                    <p data-i18n="productsPage.categories.electric.subtitle">Sustainable luxury for the future</p>
+                </header>
+                
+                <div class="vehicles-grid" id="electric-vehicles">
+                    <!-- Vehicles will be loaded dynamically -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Sports Cars Section -->
+        <section id="sports" class="vehicle-category">
+            <div class="container">
+                <header class="section-header">
+                    <h2 data-i18n="productsPage.categories.sports.title">Sports Cars</h2>
+                    <p data-i18n="productsPage.categories.sports.subtitle">Performance engineering at its finest</p>
+                </header>
+                
+                <div class="vehicles-grid" id="sports-vehicles">
+                    <!-- Vehicles will be loaded dynamically -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Vehicle Details Modal -->
+        <div id="vehicleModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="modal-body">
+                    <div class="modal-image">
+                        <img id="modalImage" src="" alt="Vehicle Image">
+                    </div>
+                    <div class="modal-info">
+                        <h2 id="modalTitle"></h2>
+                        <p class="modal-price" id="modalPrice"></p>
+                        <div class="modal-specs" id="modalSpecs">
+                            <!-- Specifications will be populated dynamically -->
+                        </div>
+                        <div class="modal-description" id="modalDescription">
+                            <!-- Description will be populated dynamically -->
+                        </div>
+                        <div class="modal-actions">
+                            <button class="btn btn-primary" id="contactBtn" data-i18n="modal.contact">Contact Sales</button>
+                            <button class="btn btn-secondary" id="testDriveBtn" data-i18n="modal.testDrive">Schedule Test Drive</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Drag and Drop Section -->
+        <section class="comparison-section">
+            <div class="container">
+                <header class="section-header">
+                    <h2 data-i18n="productsPage.comparison.title">Compare Vehicles</h2>
+                    <p data-i18n="productsPage.comparison.subtitle">Drag vehicles here to compare specifications</p>
+                </header>
+                
+                <div class="comparison-area">
+                    <div class="drop-zone" id="dropZone1">
+                        <div class="drop-placeholder">
+                            <i class="fas fa-car"></i>
+                            <p data-i18n="productsPage.comparison.placeholder">Drag a vehicle here</p>
+                        </div>
+                    </div>
+                    
+                    <div class="vs-divider">
+                        <span data-i18n="productsPage.comparison.vs">VS</span>
+                    </div>
+                    
+                    <div class="drop-zone" id="dropZone2">
+                        <div class="drop-placeholder">
+                            <i class="fas fa-car"></i>
+                            <p data-i18n="productsPage.comparison.placeholder">Drag a vehicle here</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="comparison-table" id="comparisonTable" style="display: none;">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th data-i18n="productsPage.comparison.table.feature">Feature</th>
+                                <th id="compare1Title" data-i18n="productsPage.comparison.table.vehicle1">Vehicle 1</th>
+                                <th id="compare2Title" data-i18n="productsPage.comparison.table.vehicle2">Vehicle 2</th>
+                            </tr>
+                        </thead>
+                        <tbody id="comparisonBody">
+                            <!-- Comparison data will be populated here -->
+                        </tbody>
+                    </table>
+                    <button id="clearComparison" class="btn btn-secondary" data-i18n="productsPage.comparison.clear">Clear Comparison</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Financing Options -->
+        <section class="financing-section">
+            <div class="container">
+                <header class="section-header">
+                    <h2 data-i18n="productsPage.financing.title">Financing Options</h2>
+                    <p data-i18n="productsPage.financing.subtitle">Flexible solutions to make your dream car affordable</p>
+                </header>
+                
+                <div class="financing-grid">
+                    <div class="financing-option">
+                        <div class="option-icon">
+                            <i class="fas fa-percentage"></i>
+                        </div>
+                        <h3 data-i18n="productsPage.financing.options.rates.title">Low Interest Rates</h3>
+                        <p data-i18n="productsPage.financing.options.rates.text">Competitive financing starting from 2.9% APR</p>
+                    </div>
+                    
+                    <div class="financing-option">
+                        <div class="option-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h3 data-i18n="productsPage.financing.options.terms.title">Flexible Terms</h3>
+                        <p data-i18n="productsPage.financing.options.terms.text">Choose from 24 to 84-month financing options</p>
+                    </div>
+                    
+                    <div class="financing-option">
+                        <div class="option-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3 data-i18n="productsPage.financing.options.tradein.title">Trade-In Program</h3>
+                        <p data-i18n="productsPage.financing.options.tradein.text">Get the best value for your current vehicle</p>
+                    </div>
+                    
+                    <div class="financing-option">
+                        <div class="option-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3 data-i18n="productsPage.financing.options.approval.title">Quick Approval</h3>
+                        <p data-i18n="productsPage.financing.options.approval.text">Get pre-approved in minutes with our online application</p>
+                    </div>
+                </div>
+                
+                <div class="financing-calculator">
+                    <h3 data-i18n="productsPage.calculator.title">Loan Calculator</h3>
+                    <form id="loanCalculator" class="calculator-form">
+                        <div class="calc-row">
+                            <div class="calc-group">
+                                <label for="vehiclePrice" data-i18n="productsPage.calculator.labels.vehiclePrice">Vehicle Price ($)</label>
+                                <input type="number" id="vehiclePrice" min="0" step="1000" value="50000">
+                            </div>
+                            <div class="calc-group">
+                                <label for="downPayment" data-i18n="productsPage.calculator.labels.downPayment">Down Payment ($)</label>
+                                <input type="number" id="downPayment" min="0" step="1000" value="10000">
+                            </div>
+                        </div>
+                        
+                        <div class="calc-row">
+                            <div class="calc-group">
+                                <label for="interestRate" data-i18n="productsPage.calculator.labels.interestRate">Interest Rate (%)</label>
+                                <input type="number" id="interestRate" min="0" max="25" step="0.1" value="3.5">
+                            </div>
+                            <div class="calc-group">
+                                <label for="loanTerm" data-i18n="productsPage.calculator.labels.loanTerm">Loan Term (months)</label>
+                                <select id="loanTerm">
+                                    <option value="24" data-i18n="productsPage.calculator.terms.24">24 months</option>
+                                    <option value="36" data-i18n="productsPage.calculator.terms.36">36 months</option>
+                                    <option value="48" data-i18n="productsPage.calculator.terms.48">48 months</option>
+                                    <option value="60" selected data-i18n="productsPage.calculator.terms.60">60 months</option>
+                                    <option value="72" data-i18n="productsPage.calculator.terms.72">72 months</option>
+                                    <option value="84" data-i18n="productsPage.calculator.terms.84">84 months</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <button type="button" id="calculateBtn" class="btn btn-primary" data-i18n="productsPage.calculator.calculate">Calculate Payment</button>
+                        
+                        <div id="calculatorResult" class="calc-result" style="display: none;">
+                            <h4><span data-i18n="productsPage.calculator.results.monthly">Monthly Payment:</span> <span id="monthlyPayment">$0</span></h4>
+                            <p><span data-i18n="productsPage.calculator.results.interest">Total Interest:</span> <span id="totalInterest">$0</span></p>
+                            <p><span data-i18n="productsPage.calculator.results.total">Total Cost:</span> <span id="totalCost">$0</span></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>LuxAuto</h3>
+                    <p data-i18n="footer.about">Your premier destination for luxury automobiles. Experience excellence in every detail.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-i18n="footer.quickLinksTitle">Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html" data-i18n="footer.links.home">Home</a></li>
+                        <li><a href="about.html" data-i18n="footer.links.about">About Us</a></li>
+                        <li><a href="products.html" data-i18n="footer.links.products">Products</a></li>
+                        <li><a href="contact.html" data-i18n="footer.links.contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-i18n="footer.servicesTitle">Services</h4>
+                    <ul>
+                        <li><a href="#" data-i18n="footer.services.sales">Sales</a></li>
+                        <li><a href="#" data-i18n="footer.services.service">Service</a></li>
+                        <li><a href="#" data-i18n="footer.services.financing">Financing</a></li>
+                        <li><a href="#" data-i18n="footer.services.insurance">Insurance</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-i18n="footer.contactTitle">Contact Info</h4>
+                    <div class="contact-info">
+                        <p>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span data-i18n="footer.contact.address">123 Luxury Avenue, Auto City</span>
+                        </p>
+                        <p>
+                            <i class="fas fa-phone"></i>
+                            <span data-i18n="footer.contact.phone">+1 (555) 123-4567</span>
+                        </p>
+                        <p>
+                            <i class="fas fa-envelope"></i>
+                            <span data-i18n="footer.contact.email">info@luxauto.com</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p data-i18n="footer.bottom">&copy; 2025 LuxAuto. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="../js/i18n.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/products.js"></script>
+</body>
+</html>
